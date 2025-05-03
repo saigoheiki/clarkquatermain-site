@@ -1,43 +1,48 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="dark" class="scroll-smooth antialiased overflow-x-hidden bg-base-100 text-base-content">
+<html lang="en"
+      data-theme="dark"
+      class="scroll-smooth antialiased overflow-x-hidden bg-base-100 text-base-content">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  {#— Page title falls back to site name if none supplied —#}
+  {#— Page title falls back to pen-name if none supplied —#}
   <title>{{ title or "Clark Quatermain" }}</title>
 
-  {#— Optional: Google Fonts for Playfair Display + Inter —#}
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet" />
+  {#— Google Fonts —#}
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Playfair+Display:wght@700&display=swap"
+        rel="stylesheet" />
 
   {#— Tailwind build output —#}
   <link rel="stylesheet" href="/assets/main.css" />
 </head>
 
-<body class="min-h-screen overflow-x-hidden font-sans">
+<body class="min-h-screen flex flex-col font-sans overflow-x-hidden">
 
-  {#— Site-wide header (add nav links later if you like) —#}
+  {#— Header —#}
   <header class="max-w-6xl mx-auto px-6 py-4 flex items-center">
     <a href="/" class="font-serif text-2xl font-bold text-accent">
       Rugged&nbsp;Desires
     </a>
+
+    <nav class="ml-auto hidden md:flex space-x-6 text-sm">
+      <a href="/books/"   class="link link-hover">Books</a>
+      <a href="/about/"   class="link link-hover">About</a>
+      <a href="/contact/" class="link link-hover">Contact</a>
+    </nav>
   </header>
 
-  {#— Main page content injected here —#}
-  <main class="max-w-6xl mx-auto px-6 py-10">
+  {#— Page-specific content —#}
+  <main class="flex-grow">
     {{ content | safe }}
   </main>
 
-  {#— Simple footer —#}
-  <footer class="max-w-6xl mx-auto px-6 py-8 text-sm opacity-75">
-    © {{ "now" | date("yyyy") }} Clark Quatermain. All rights reserved.
-    <span class="ml-2">
-      <a href="/privacy/" class="underline hover:text-accent">Privacy&nbsp;Policy</a>
-      &nbsp;•&nbsp;
-      <a href="/terms/"   class="underline hover:text-accent">Terms&nbsp;of&nbsp;Use</a>
-    </span>
+  {#— Footer —#}
+  <footer class="text-sm opacity-70 py-8 text-center">
+    © {{ "now" | date("yyyy") }} Clark Quatermain.
+    <a href="/privacy/" class="underline hover:text-accent ml-1">Privacy</a>
+    &nbsp;•&nbsp;
+    <a href="/terms/"   class="underline hover:text-accent">Terms</a>
   </footer>
-
-  {#— BrowserSync reload script is injected automatically by Eleventy dev-server —#}
 </body>
 </html>

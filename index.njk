@@ -1,61 +1,45 @@
 ---
-title: Clark Quatermain
+title: ""
 layout: layout.njk
 ---
 
-{# HERO IMAGE ---------------------------------------------------- #}
-<div class="w-full h-48 sm:h-64 bg-center bg-cover rounded-b-3xl shadow-lg overflow-hidden mb-8"
-     style="background-image:url('/cdn-cgi/image/width=3000,quality=75,format=auto/img/hero-cabin.jpg');"
-     role="img" aria-label="Gay romance banner: rugged man wraps arm over partner’s shoulders in cabin doorway, rain falling outside"
->
-</div>
+{# — HERO — #}
+<section class="relative">
+  <picture>
+    <!-- Modern formats first -->
+    <source srcset="/img/hero-cabin.avif" type="image/avif" />
+    <source srcset="/img/hero-cabin.webp" type="image/webp" />
+    <!-- Fallback -->
+    <img src="/img/hero-cabin.webp"
+         alt="Two men framed in a cabin doorway, one arm draped over the other's shoulders while rain falls outside"
+         class="w-full h-[60vh] object-cover object-center" />
+  </picture>
 
-{# -------------------------------------------------------------------
-   HOME / LANDING PAGE
-   ------------------------------------------------------------------- #}
+  <div class="absolute inset-0 flex flex-col items-center justify-center text-center px-6">
+    <h1 class="font-serif text-4xl md:text-5xl text-accent mb-4">
+      Two men. One wilderness at a time.
+    </h1>
+    <p class="italic mb-8 max-w-xl">
+      The cabin’s getting steamy…
+    </p>
 
-<section class="max-w-5xl mx-auto px-6 py-12">
-
-  {# — Hero Heading — #}
-  <h1 class="text-5xl sm:text-6xl lg:text-7xl font-serif font-bold text-accent mb-6 leading-tight break-words">
-    Welcome to the rugged universe of <span>Clark&nbsp;Quatermain</span>
-  </h1>
-
-  {# — Sub‑headline paragraph — #}
-  <p class="text-lg leading-relaxed max-w-prose mb-10">
-    Two men, one wilderness at a time. Grab a blanket—<em>the cabin’s getting steamy…</em>
-  </p>
-
-  {# — Primary CTAs — #}
-  <div class="flex flex-col items-center sm:flex-row gap-4">
-    <a href="/books/"
-       class="w-full max-w-xs sm:w-auto inline-block px-6 py-3 rounded-lg bg-accent text-white font-semibold shadow-lg hover:bg-accent/90 transition">
-      Browse&nbsp;the&nbsp;Books
-    </a>
-
-    <a href="#newsletter"
-       class="w-full max-w-xs sm:w-auto inline-block px-6 py-3 rounded-lg border border-accent text-accent font-semibold hover:bg-accent hover:text-white transition">
-      Join&nbsp;the&nbsp;Newsletter
-    </a>
+    <div class="flex flex-col sm:flex-row gap-4">
+      <a href="#newsletter" class="btn btn-accent">Grab the bonus epilogue</a>
+      <a href="/books/"     class="btn btn-outline">Browse the book</a>
+    </div>
   </div>
-
 </section>
 
-{# -------------------------------------------------------------------
-   NEWSLETTER SIGN‑UP
-   * Uses EmailOctopus embedded form script.
-   * Set “After signup → Redirect to URL” in EO dashboard to your
-     BookFunnel giveaway page so readers get the bonus scene instantly.
-   ------------------------------------------------------------------- #}
-<section id="newsletter" class="max-w-xl mx-auto px-6 py-16">
-  <h2 class="text-3xl font-serif font-bold mb-4">Stay in the loop</h2>
+{# — NEWSLETTER GATE — #}
+<section id="newsletter" class="max-w-2xl mx-auto px-6 py-20 text-center">
+  <h2 class="text-3xl font-serif mb-4">Stay in the loop</h2>
   <p class="mb-6">
-    Get release alerts, exclusive bonus scenes, and spicy snippets—straight to your inbox.
+    Exclusive scenes, early cover reveals, zero spam. Unsubscribe anytime.
   </p>
 
-  <!-- EmailOctopus embed -->
-  <script async
-          src="https://eocampaign1.com/form/dc814c7a-257d-11f0-ae93-adbea1a5ee95.js"
-          data-form="dc814c7a-257d-11f0-ae93-adbea1a5ee95">
-  </script>
+  <!-- BEGIN EmailOctopus embed -->
+  <div class="mx-auto">
+    <!--  🔑  Paste your EmailOctopus form snippet here -->
+  </div>
+  <!-- END EmailOctopus embed -->
 </section>
