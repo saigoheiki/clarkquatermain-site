@@ -19,17 +19,14 @@
 
 <body class="min-h-screen flex flex-col font-sans overflow-x-hidden">
 
-  {#— Header —#}
-  <header class="max-w-6xl mx-auto px-6 py-4 flex items-center">
-    <a href="/" class="font-serif text-2xl font-bold text-accent">
-      Rugged&nbsp;Desires
-    </a>
+  <header class="navbar px-6">
+    <div class="navbar-start"></div>
 
-    <nav class="ml-auto hidden md:flex space-x-6 text-sm">
-      <a href="/books/"   class="link link-hover">Books</a>
-      <a href="/about/"   class="link link-hover">About</a>
-      <a href="/contact/" class="link link-hover">Contact</a>
-    </nav>
+    <div class="navbar-end space-x-2">
+      <a href="/books/"   class="btn btn-ghost btn-sm">Books</a>
+      <a href="/about/"   class="btn btn-ghost btn-sm">About</a>
+      <a href="/contact/" class="btn btn-ghost btn-sm">Contact</a>
+    </div>
   </header>
 
   {#— Page-specific content —#}
