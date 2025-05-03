@@ -21,6 +21,6 @@ module.exports = {
 
   // DaisyUI config – keep the CSS lean by loading only the themes you need
   daisyui: {
-    themes: ["light", "dark"] // set to `true` for all 35 built‑ins
+    themes: ["dark"] // use only the dark theme; set to `true` for all 35
   }
 };
