@@ -4,10 +4,10 @@
   "main": "index.js",
   "scripts": {
     "dev": "npm-run-all -p dev:*",
-    "dev:css": "tailwindcss -i src/main.css -o _site/assets/main.css --watch --minify",
+    "dev:css": "tailwindcss -i src/main.css -o _site/main.css --watch --minify",
     "dev:11ty": "eleventy --serve --quiet",
     "build": "npm-run-all build:*",
-    "build:css": "tailwindcss -i src/main.css -o _site/assets/main.css --minify",
+    "build:css": "tailwindcss -i src/main.css -o _site/main.css --minify",
     "build:11ty": "eleventy"
   },
   "keywords": [],
