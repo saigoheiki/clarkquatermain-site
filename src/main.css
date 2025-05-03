@@ -8,3 +8,10 @@
     --accent: #d88c27;   /* fallback Oregon amber */
   }
 }
+
+/* ---- MOBILE SAFARI SAFETY NET ----------------------------------- */
+@layer base {
+  html {          /* prevents any element from widening the viewport */
+    overflow-x: clip;
+  }
+}
