@@ -5,7 +5,9 @@ layout: layout.njk
 
 {# — HERO — #}
 <section class="relative">
-  <picture>
+  <!-- subtle overlay to keep text readable -->
+  <div class="absolute inset-0 bg-gradient-to-b from-black/40 to-black/60"></div>
+  <picture class="absolute inset-0">
     <!-- Modern formats first -->
     <source srcset="/img/hero-cabin.avif" type="image/avif" />
     <source srcset="/img/hero-cabin.webp" type="image/webp" />
@@ -17,23 +19,23 @@ layout: layout.njk
          loading="eager" fetchpriority="high" />
   </picture>
 
-  <div class="absolute inset-0 flex flex-col items-center justify-center text-center px-6">
-    <h1 class="font-serif text-4xl md:text-5xl text-accent mb-4">
-      Two men. One wilderness at a time.
+  <div class="relative z-10 flex flex-col items-center justify-center text-center px-6">
+    <h1 class="font-serif text-4xl md:text-5xl mb-4 max-w-3xl">
+      Welcome to the rugged universe of <span class="text-accent">Clark&nbsp;Quatermain</span>
     </h1>
-    <p class="italic mb-8 max-w-xl">
-      The cabin’s getting steamy…
+    <p class="mb-8 text-lg md:text-xl max-w-xl">
+      Two men, one wilderness at a time.
     </p>
 
-    <div class="flex flex-col sm:flex-row gap-4">
-      <a href="#newsletter" class="btn btn-accent">Grab the bonus epilogue</a>
-      <a href="/books/"     class="btn btn-outline">Browse the book</a>
+    <div class="flex flex-wrap justify-center gap-4">
+      <a href="#newsletter" class="btn btn-accent px-6">Grab the bonus epilogue</a>
+      <a href="/books/"     class="btn btn-outline px-6">Browse the book</a>
     </div>
   </div>
 </section>
 
 {# — NEWSLETTER GATE — #}
-<section id="newsletter" class="max-w-2xl mx-auto px-6 py-20 text-center">
+<section id="newsletter" class="max-w-2xl mx-auto px-6 py-20 text-center scroll-mt-24">
   <h2 class="text-3xl font-serif mb-4">Stay in the loop</h2>
   <p class="mb-6">
     Exclusive scenes, early cover reveals, zero spam. Unsubscribe anytime.
