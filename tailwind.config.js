@@ -1,4 +1,4 @@
-/** @type {import('tailwindcss').Config} */
+/ ** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
     "./src/**/*.{njk,md}", // everything under src/ with .njk or .md
@@ -14,5 +14,13 @@ module.exports = {
         sans: ["Inter", "sans-serif"]
       }
     }
+  },
+  plugins: [
+    require("daisyui")
+  ],
+
+  // DaisyUI config – keep the CSS lean by loading only the themes you need
+  daisyui: {
+    themes: ["light", "dark"] // set to `true` for all 35 built‑ins
   }
 };
