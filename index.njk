@@ -10,9 +10,11 @@ layout: layout.njk
     <source srcset="/img/hero-cabin.avif" type="image/avif" />
     <source srcset="/img/hero-cabin.webp" type="image/webp" />
     <!-- Fallback -->
-    <img src="/img/hero-cabin.webp"
+    <source srcset="/img/hero-cabin.jpg" type="image/jpeg" />
+    <img src="/img/hero-cabin.jpg"
          alt="Two men framed in a cabin doorway, one arm draped over the other's shoulders while rain falls outside"
-         class="w-full h-[60vh] object-cover object-center" />
+         class="w-full h-[60vh] object-cover object-center"
+         loading="eager" fetchpriority="high" />
   </picture>
 
   <div class="absolute inset-0 flex flex-col items-center justify-center text-center px-6">
