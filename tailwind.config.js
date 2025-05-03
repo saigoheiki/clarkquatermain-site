@@ -1,7 +1,8 @@
-/ ** @type {import('tailwindcss').Config} */
+/** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
     "./src/**/*.{njk,md}", // everything under src/ with .njk or .md
+    "./_includes/**/*.{njk,md}", // Eleventy partials
     "./*.njk"              // root-level templates
   ],
   theme: {
