@@ -1,9 +1,10 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    "./src/**/*.{njk,md}", // everything under src/ with .njk or .md
-    "./_includes/**/*.{njk,md}", // Eleventy partials
-    "./*.njk"              // root-level templates
+    "./src/**/*.{njk,md}",     // Eleventy content in /src
+    "./_includes/**/*.{njk,md}",// layouts & partials
+    "./*.njk",                 // root-level templates (index.njk, etc.)
+    "./books/**/*.{njk,md}"    // ⬅ NEW: scan Markdown book pages
   ],
   theme: {
     extend: {
@@ -12,16 +13,12 @@ module.exports = {
       },
       fontFamily: {
         serif: ["Playfair Display", "serif"],
-        sans: ["Inter", "sans-serif"]
+        sans:  ["Inter", "sans-serif"]
       }
     }
   },
-  plugins: [
-    require("daisyui")
-  ],
-
-  // DaisyUI config – keep the CSS lean by loading only the themes you need
+  plugins: [require("daisyui")],
   daisyui: {
-    themes: ["dark"] // use only the dark theme; set to `true` for all 35
+    themes: ["dark"]           // load only the dark palette
   }
 };
