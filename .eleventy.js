@@ -9,6 +9,9 @@ module.exports = function (eleventyConfig) {
     ).toFormat(format)
   );
 
+  // Copy images to the output folder so hero banner loads
+  eleventyConfig.addPassthroughCopy("img");
+
   return {
     // leave dir settings alone if you didn’t customise them
   };
