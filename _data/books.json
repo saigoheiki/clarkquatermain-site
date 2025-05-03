@@ -1,0 +1,24 @@
+[
+  {
+    "slug": "claimed-mountain-man",
+    "title": "Claimed by the Mountain Man",
+    "series": "Rugged Desires",
+    "order": 1,
+    "accent": "#d88c27",
+    "badge": "🌲 Oregon",
+    "heat": 5,
+    "cover": "/img/claimed.webp",
+    "blurb": "A city hiker, a grumpy mountain man, only one dry bed…"
+  },
+  {
+    "slug": "ignited-smokejumper",
+    "title": "Ignited by the Smokejumper",
+    "series": "Rugged Desires",
+    "order": 2,
+    "accent": "#3f87f5",
+    "badge": "🐎 Montana",
+    "heat": 5,
+    "cover": "/img/ignited.webp",
+    "blurb": "When a wildfire lands him in a remote lookout tower, sparks fly—literally."
+  }
+]

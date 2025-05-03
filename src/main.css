@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* optional house rules */
+@layer base {
+  :root {
+    --accent: #d88c27;   /* fallback Oregon amber */
+  }
+}
