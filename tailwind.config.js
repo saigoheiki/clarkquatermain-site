@@ -1,11 +1,13 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    "./src/**/*.{njk,md}",     // Eleventy content in /src
-    "./_includes/**/*.{njk,md}",// layouts & partials
-    "./*.njk",                 // root-level templates (index.njk, etc.)
-    "./books/**/*.{njk,md}"    // ⬅ NEW: scan Markdown book pages
+    "./src/**/*.{njk,md,html,js}",       // Eleventy source templates
+    "./_includes/**/*.{njk,md,html,js}", // layouts & partials
+    "./*.{njk,html}",                    // root‑level pages
+    "./books/**/*.{njk,md}",             // Markdown book pages
+    "./_site/**/*.html"                  // generated output (for dev JIT)
   ],
+  darkMode: "class",
   theme: {
     extend: {
       colors: {

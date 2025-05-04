@@ -15,3 +15,23 @@
     overflow-x: clip;
   }
 }
+
+/* ---- BRAND UTILITIES & COMPONENTS -------------------------------- */
+@layer utilities {
+  .text-accent { color: var(--accent); }
+}
+
+@layer components {
+  /* solid accent button */
+  .btn-accent {
+    @apply btn border-none text-black;
+    background-color: var(--accent);
+  }
+
+  /* outlined accent button */
+  .btn-accent-outline {
+    @apply btn border-2;
+    border-color: var(--accent);
+    color: var(--accent);
+  }
+}
