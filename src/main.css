@@ -5,7 +5,7 @@
 /* optional house rules */
 @layer base {
   :root {
-    --accent: #d88c27;   /* fallback Oregon amber */
+    --accent: #db983d;   /* fallback Oregon amber */
   }
 }
 
@@ -22,17 +22,15 @@
 }
 
 @layer components {
-  /* solid accent button */
   .btn-accent {
     @apply border-none text-black;
-    background-color: var(--accent);
+    background-color: var(--accent) !important;
   }
 
-  /* outlined accent button */
   .btn-accent-outline {
     @apply border-2;
-    border-color: var(--accent);
-    color: var(--accent);
+    border-color: var(--accent) !important;
+    color: var(--accent) !important;
   }
 }
 
