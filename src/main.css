@@ -24,13 +24,13 @@
 @layer components {
   /* solid accent button */
   .btn-accent {
-    @apply btn border-none text-black;
+    @apply border-none text-black;
     background-color: var(--accent);
   }
 
   /* outlined accent button */
   .btn-accent-outline {
-    @apply btn border-2;
+    @apply border-2;
     border-color: var(--accent);
     color: var(--accent);
   }
