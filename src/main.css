@@ -45,3 +45,9 @@
        1px  1px 0 rgba(0,0,0,0.5);
   }
 }
+
+.hero-overlay {
+  background: rgba(0, 0, 0, 0.4); /* Black with 40% opacity */
+  position: absolute;
+  inset: 0;
+}
