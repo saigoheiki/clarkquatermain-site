@@ -19,9 +19,8 @@ layout: layout.njk
          loading="eager" fetchpriority="high" />
   </picture>
 
-  <!-- This specific flex container with h-full is key to vertical centering -->
-  <div class="relative h-full flex flex-col justify-center">
-    <div class="flex flex-col items-center text-center px-6 gap-y-6">
+  <div class="absolute inset-0 flex items-center justify-center">
+    <div class="relative z-10 flex flex-col items-center text-center px-6 gap-y-6">
       <h1 class="font-serif text-3xl md:text-5xl leading-tight max-w-3xl md:max-w-4xl text-accent"
           style="text-shadow:0 2px 4px rgba(0,0,0,.6)">
         Welcome to the rugged universe of <br class="hidden md:block">
@@ -32,7 +31,7 @@ layout: layout.njk
       </p>
 
       <div class="flex flex-wrap justify-center gap-6">
-        <a href="#newsletter" class="btn bg-accent hover:bg-accent/90 text-white border-none px-6">Grab the bonus epilogue</a>
+        <a href="#newsletter" class="btn bg-accent text-base-100 hover:bg-accent/90 border-0 px-6">Grab the bonus epilogue</a>
         <a href="/books/" class="btn btn-outline px-6">Browse the book</a>
       </div>
     </div>
