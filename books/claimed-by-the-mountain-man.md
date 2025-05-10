@@ -9,7 +9,7 @@ cover: "/img/claimed-cover.webp"
 blurb: "A city hiker, a grumpy mountain man, only one dry bed..."
 retailer: "https://www.amazon.com/dp/B0F7GPPTW9"
 permalink: "/books/claimed/"
-layout: layout.njk
+layout: book.njk
 ---
 
 ### Claimed by the Mountain Man
