@@ -6,7 +6,8 @@ permalink: /about/
 
 ## Who’s this guy?
 
-I write steamy, wilderness-tinged gay romance novellas.  
+I write steamy, wilderness-tinged gay romance novellas.
+
 Think flannel, firelight, and feelings your camping instructor never warned you about.
 
 Off the page, you’ll catch me chasing sunrise along foggy ridgelines, sketching plot twists in a battered field notebook, or losing hours thumbing paperbacks in dusty corner shelves.
