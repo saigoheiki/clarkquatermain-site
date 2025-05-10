@@ -30,8 +30,14 @@
   </header>
 
   {#— Page-specific content —#}
-  <main class="flex-grow">
-    {{ content | safe }}
+  <main class="flex-grow px-6">
+    {% if page.inputPath.endsWith('.md') %}
+      <article class="prose dark:prose-invert max-w-2xl mx-auto">
+        {{ content | safe }}
+      </article>
+    {% else %}
+      {{ content | safe }}
+    {% endif %}
   </main>
 
   {#— Footer —#}
