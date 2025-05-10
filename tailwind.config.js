@@ -19,7 +19,10 @@ module.exports = {
       }
     }
   },
-  plugins: [require("daisyui")],
+  plugins: [
+    require("@tailwindcss/typography"), // ← new, for prettier markdown
+    require("daisyui")
+  ],
   daisyui: {
     themes: ["dark"]           // load only the dark palette
   }
