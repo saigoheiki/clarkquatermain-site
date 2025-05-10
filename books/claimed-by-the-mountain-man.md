@@ -14,16 +14,6 @@ layout: layout.njk
 
 ### Claimed by the Mountain Man
 
-<img
-  src="/img/claimed-cover.webp"
-  alt="Claimed by the Mountain Man cover"
-  class="rounded-lg mb-6 mx-auto max-w-xs"
-/>
-
 A city hiker, a grumpy mountain man, only one dry bed…
 
 One wrong turn off an Oregon trail leaves city-tough but heart-bruised Cole shivering on a storm-soaked mountainside—until Reed, a reclusive, broad-shouldered logger, hauls him into a remote trapper cabin for the night. One creaking bed, crackling firelight, and a shared blanket turn survival into slow-burn heat that erupts fast: flannel peeled away, nerves laid bare, and no fade-to-black in sight. In this bite-size M/M wilderness romance, opposites collide, sparks ignite, and a hard-won happily-ever-after waits at first light—all in under an hour’s read.
-
-<a class="cta-button" href="https://www.amazon.com/dp/B0F7GPPTW9">
-  Read free with Kindle Unlimited — or buy on Amazon
-</a>

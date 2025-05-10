@@ -1,0 +1,39 @@
+{# ── _includes/book.njk ─────────────────────────────────────────── #}
+{% extends "layout.njk" %}
+
+{% block content %}
+<article class="max-w-3xl mx-auto px-4 prose prose-invert">
+
+  {# cover image -------------------------------------------------- #}
+  {% if cover %}
+    <img
+      src="{{ cover }}"
+      alt="{{ title }} cover"
+      class="rounded-lg mb-8 mx-auto max-w-xs"
+      sizes="(min-width: 640px) 240px, 70vw"
+      loading="lazy"
+    >
+  {% endif %}
+
+  {# title & series badge ----------------------------------------- #}
+  <h1 class="font-serif text-accent !mb-1">{{ title }}</h1>
+  {% if series or badge %}
+    <p class="opacity-80 !mt-0 !mb-6">
+      {{ series }}{% if series and badge %} · {% endif %}{{ badge }}
+    </p>
+  {% endif %}
+
+  {# main markdown content (your blurb etc.) ---------------------- #}
+  {{ content | safe }}
+
+  {# CTA button --------------------------------------------------- #}
+  {% if retailer %}
+    <p class="mt-8">
+      <a href="{{ retailer }}" class="cta-button">
+        Read free with Kindle Unlimited — or buy on Amazon
+      </a>
+    </p>
+  {% endif %}
+
+</article>
+{% endblock %}
