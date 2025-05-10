@@ -36,10 +36,16 @@
 
   {#— Footer —#}
   <footer class="text-sm opacity-70 py-8 text-center">
-    © {{ "now" | date("yyyy") }} Clark Quatermain.
-    <a href="/privacy/" class="underline hover:text-accent ml-1">Privacy</a>
-    &nbsp;•&nbsp;
+  © {{ "now" | date("yyyy") }} Clark Quatermain.
+  <nav class="inline-block ml-2 space-x-2">
+    <a href="/privacy/" class="underline hover:text-accent">Privacy</a>
+    <span>&#x2022;</span>
     <a href="/terms/"   class="underline hover:text-accent">Terms</a>
-  </footer>
+    <span>&#x2022;</span>
+    <a href="/about/"   class="underline hover:text-accent">About</a>
+    <span>&#x2022;</span>
+    <a href="/contact/" class="underline hover:text-accent">Contact</a>
+  </nav>
+</footer>
 </body>
 </html>
