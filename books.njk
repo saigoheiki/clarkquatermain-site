@@ -11,25 +11,25 @@ layout: layout.njk
       Sort by order, then loop.
       (If you ever mix series, filter by series first.)
     #}
-    {% for book in books | sort(attribute='order') %}
+    {% for book in collections.books | sort(attribute='data.order') %}
       <article
         class="rounded-2xl shadow-lg overflow-hidden flex flex-col"
-        style="--accent: {{ book.accent }}"
+        style="--accent: {{ book.data.accent }}"
       >
-        <img src="{{ book.cover }}" alt="{{ book.title }} cover">
+        <img src="{{ book.data.cover }}" alt="{{ book.data.title }} cover">
 
         <div class="p-6 grow flex flex-col">
           <h2 class="font-serif text-2xl text-accent mb-2">
-            {{ book.title }}
+            {{ book.data.title }}
           </h2>
 
           <p class="text-sm opacity-80 mb-4">
-            {{ book.series }} · {{ book.badge }}
+            {{ book.data.series }} · {{ book.data.badge }}
           </p>
 
-          <p class="mb-4 grow">{{ book.blurb }}</p>
+          <p class="mb-4 grow">{{ book.data.blurb }}</p>
 
-          <a href="/{{ book.slug }}/" class="mt-auto inline-block 
+          <a href="{{ book.url }}" class="mt-auto inline-block 
                      bg-accent/90 hover:bg-accent text-white px-4 py-2 rounded">
             Read more →
           </a>
