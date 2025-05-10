@@ -12,7 +12,13 @@ permalink: "/books/claimed/"
 layout: layout.njk
 ---
 
-### Blurb  
+### Claimed by the Mountain Man
+
+<img
+  src="/img/claimed-cover.webp"
+  alt="Claimed by the Mountain Man cover"
+  class="rounded-lg mb-6 mx-auto max-w-xs"
+/>
 
 A city hiker, a grumpy mountain man, only one dry bed…
 

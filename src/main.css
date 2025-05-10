@@ -32,17 +32,19 @@
     border-color: var(--accent) !important;
     color: var(--accent) !important;
   }
-}
 
-/* call‑to‑action button used on book pages */
-.cta-button {
-  @apply inline-block font-semibold rounded-md no-underline text-white;
-  background-color: var(--accent) !important;
-  padding: 0.75rem 1.25rem;   /* roughly py‑3 px‑5 */
-}
+  /* call‑to‑action button used on book pages */
+  .cta-button,
+  .prose .cta-button {
+    @apply inline-block font-semibold rounded-md no-underline text-white;
+    background-color: var(--accent) !important;
+    padding: 0.75rem 1.25rem; /* roughly py‑3 px‑5 */
+  }
 
-.cta-button:hover {
-  background-color: #b57328 !important; /* slightly darker than --accent */
+  .cta-button:hover,
+  .prose .cta-button:hover {
+    background-color: #b57328 !important; /* slightly darker than --accent */
+  }
 }
 
 @layer utilities {
